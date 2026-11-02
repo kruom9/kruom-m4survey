@@ -16,7 +16,7 @@ body{font-family:"IBM Plex Sans Thai",system-ui,-apple-system,"Segoe UI",sans-se
 header.top{background:linear-gradient(135deg,var(--pri),var(--pri2));color:#fff;padding:18px 16px 22px}
 header.top .wrap{max-width:720px;margin:0 auto}
 .school{font-size:14px;opacity:.9;letter-spacing:.2px}
-h1{font-size:21px;margin:4px 0 0;line-height:1.4}
+h1{font-size:19px;margin:4px 0 0;line-height:1.4}
 .wrap{max-width:720px;margin:0 auto;padding:0 14px}
 .card{background:var(--card);border-radius:16px;box-shadow:0 2px 10px rgba(18,59,122,.07);padding:18px 16px;margin:14px 0;border:1px solid #e8edf5}
 .step{display:none}.step.on{display:block}
@@ -62,14 +62,14 @@ footer.notice .p{white-space:nowrap;font-weight:700;color:var(--pri)}
 <body>
 <header class="top"><div class="wrap">
  <div class="school">โรงเรียนปิยมิตรวิทยา ฝ่ายมัธยม · อ.เชียงคำ จ.พะเยา</div>
- <h1>แบบสอบถามความต้องการการศึกษาต่อ<br>ชั้นมัธยมศึกษาปีที่ 4 ปีการศึกษา 2570</h1>
+ <h1>แบบสอบถามความต้องการ<span style="white-space:nowrap">การศึกษาต่อ</span><br>ชั้นมัธยมศึกษาปีที่ 4 <span style="white-space:nowrap">ปีการศึกษา 2570</span></h1>
 </div></header>
 <main class="wrap">
  <div class="progress" id="prog"><i></i><i></i><i></i><i></i><i></i></div>
 
  <section class="step on" data-step="1">
   <div class="card">
-   <p style="margin-top:0">เรียน ผู้ปกครองนักเรียนชั้น ม.3 ทุกท่าน โรงเรียนขอความร่วมมือตอบแบบสอบถามสั้น ๆ (ประมาณ 7–10 นาที) เพื่อรับฟังความต้องการของครอบครัวเกี่ยวกับการเรียนต่อชั้น ม.4 และนำไปวางแผนการจัดการศึกษาให้ตรงกับความต้องการของนักเรียนมากที่สุด</p>
+   <p style="margin-top:0">เรียน ผู้ปกครองนักเรียนชั้น ม.3 ทุกท่าน โรงเรียนขอความร่วมมือให้<b>นักเรียนกรอกแบบสอบถามร่วมกับผู้ปกครอง</b> (ใช้เวลาประมาณ 10–15 นาที) เพื่อรับฟังความต้องการของครอบครัวเกี่ยวกับการเรียนต่อชั้น ม.4 และนำไปวางแผนการจัดการศึกษาให้ตรงกับความต้องการของนักเรียนมากที่สุด</p>
    <form id="loginForm" autocomplete="off">
     <label class="fld" for="sid">เลขประจำตัวนักเรียน</label>
     <input id="sid" type="tel" inputmode="numeric" pattern="[0-9]*" maxlength="6" placeholder="เช่น 15xxx" required>
