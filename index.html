@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<meta name="referrer" content="no-referrer">
+<meta name="theme-color" content="#123b7a">
+<title>แบบสอบถามการเรียนต่อ ม.4 | โรงเรียนปิยมิตรวิทยา</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--pri:#123b7a;--pri2:#1f5fbf;--acc:#e0a526;--bg:#f3f6fb;--card:#fff;--ink:#1d2433;--mut:#5b6476;--ok:#1e8e5a;--err:#c0392b;--line:#dbe2ee}
+*{box-sizing:border-box}html,body{margin:0}
+body{font-family:"IBM Plex Sans Thai",system-ui,-apple-system,"Segoe UI",sans-serif;background:var(--bg);color:var(--ink);font-size:17px;line-height:1.6;padding-bottom:84px}
+header.top{background:linear-gradient(135deg,var(--pri),var(--pri2));color:#fff;padding:18px 16px 22px}
+header.top .wrap{max-width:720px;margin:0 auto}
+.school{font-size:14px;opacity:.9;letter-spacing:.2px}
+h1{font-size:21px;margin:4px 0 0;line-height:1.4}
+.wrap{max-width:720px;margin:0 auto;padding:0 14px}
+.card{background:var(--card);border-radius:16px;box-shadow:0 2px 10px rgba(18,59,122,.07);padding:18px 16px;margin:14px 0;border:1px solid #e8edf5}
+.step{display:none}.step.on{display:block}
+.progress{display:flex;gap:6px;margin:14px 0 2px}.progress i{flex:1;height:6px;border-radius:6px;background:#d5ddea}.progress i.on{background:var(--acc)}
+label.fld{display:block;font-weight:600;margin-bottom:6px}
+input[type=text],input[type=tel],textarea{width:100%;font:inherit;font-size:20px;padding:12px 14px;border:1.5px solid var(--line);border-radius:12px;background:#fff}
+textarea{font-size:17px;min-height:110px}
+input:focus,textarea:focus{outline:none;border-color:var(--pri2);box-shadow:0 0 0 3px rgba(31,95,191,.15)}
+.btn{display:block;width:100%;border:0;border-radius:12px;padding:14px 16px;font:inherit;font-size:18px;font-weight:600;cursor:pointer;background:var(--pri);color:#fff;margin-top:14px}
+.btn.sec{background:#e7ecf5;color:var(--pri)}
+.btn:disabled{opacity:.6;cursor:wait}
+.row2{display:flex;gap:10px}.row2 .btn{flex:1}
+.msg{margin-top:10px;font-size:15px;border-radius:10px;padding:10px 12px;display:none}
+.msg.err{display:block;background:#fdecea;color:var(--err)}.msg.info{display:block;background:#eaf2fd;color:var(--pri)}
+.greet{font-size:20px;font-weight:700;color:var(--pri);margin:0 0 6px;line-height:1.45}
+.together{display:flex;gap:10px;align-items:flex-start;background:#fff7e3;border:1px solid #f2d78f;border-radius:12px;padding:10px 12px;font-size:15px}
+.sec-title{font-size:18px;font-weight:700;color:var(--pri);margin:4px 0 2px}
+.q{padding:14px 0;border-top:1px solid #eef1f6}.q:first-of-type{border-top:0}
+.qt{font-weight:600;margin-bottom:8px}.qt .no{color:var(--pri2);margin-right:4px}
+.hint{font-size:14px;color:var(--mut);margin:-4px 0 8px}
+.opt{display:flex;align-items:flex-start;gap:10px;padding:11px 12px;border:1.5px solid var(--line);border-radius:12px;margin:7px 0;cursor:pointer;background:#fff;transition:.15s}
+.opt input{margin-top:4px;width:20px;height:20px;accent-color:var(--pri2);flex:none}
+.opt.sel{border-color:var(--pri2);background:#eef4ff}
+.opt.dis{opacity:.45}
+.q.bad .qt{color:var(--err)}.q.bad{background:#fff7f6;border-radius:12px;padding-left:8px;padding-right:8px}
+.scale-row{padding:10px 0;border-bottom:1px dashed #e3e8f0}.scale-row:last-child{border:0}
+.scale-row .lbl{font-size:16px;margin-bottom:6px}
+.pills{display:grid;grid-template-columns:repeat(5,1fr);gap:5px}
+.pills label{text-align:center;font-size:13px;border:1.5px solid var(--line);border-radius:10px;padding:8px 2px;cursor:pointer;background:#fff;line-height:1.25}
+.pills input{position:absolute;opacity:0;pointer-events:none}
+.pills label.sel{background:var(--pri2);border-color:var(--pri2);color:#fff}
+.scale-row.bad .lbl{color:var(--err);font-weight:600}
+.small{font-size:14px;color:var(--mut)}
+.pdpa{font-size:14px;color:var(--mut);background:#f7f9fc;border-radius:12px;padding:10px 12px;margin-top:12px}
+.done{text-align:center;padding:28px 16px}.done .ic{font-size:54px;color:var(--ok)}
+footer.notice{position:fixed;left:0;right:0;bottom:0;background:#fff;border-top:3px solid var(--acc);padding:8px 12px calc(8px + env(safe-area-inset-bottom));font-size:13px;z-index:9;box-shadow:0 -2px 10px rgba(0,0,0,.06)}
+footer.notice .wrap{display:flex;justify-content:space-between;gap:10px;align-items:center}
+footer.notice .n{color:#8a1c12;font-weight:600}
+footer.notice .p{white-space:nowrap;font-weight:700;color:var(--pri)}
+@media (max-width:380px){.pills label{font-size:12px}body{font-size:16px}}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+ <div class="school">โรงเรียนปิยมิตรวิทยา ฝ่ายมัธยม · อ.เชียงคำ จ.พะเยา</div>
+ <h1>แบบสอบถามความต้องการการศึกษาต่อ<br>ชั้นมัธยมศึกษาปีที่ 4 ปีการศึกษา 2570</h1>
+</div></header>
+<main class="wrap">
+ <div class="progress" id="prog"><i></i><i></i><i></i><i></i><i></i></div>
+
+ <section class="step on" data-step="1">
+  <div class="card">
+   <p style="margin-top:0">เรียน ผู้ปกครองนักเรียนชั้น ม.3 ทุกท่าน โรงเรียนขอความร่วมมือตอบแบบสอบถามสั้น ๆ (ประมาณ 7–10 นาที) เพื่อรับฟังความต้องการของครอบครัวเกี่ยวกับการเรียนต่อชั้น ม.4 และนำไปวางแผนการจัดการศึกษาให้ตรงกับความต้องการของนักเรียนมากที่สุด</p>
+   <form id="loginForm" autocomplete="off">
+    <label class="fld" for="sid">เลขประจำตัวนักเรียน</label>
+    <input id="sid" type="tel" inputmode="numeric" pattern="[0-9]*" maxlength="6" placeholder="เช่น 15xxx" required>
+    <button class="btn" id="loginBtn" type="submit">เข้าสู่แบบสอบถาม</button>
+    <div class="msg" id="loginMsg"></div>
+   </form>
+   <div class="pdpa"><b>การคุ้มครองข้อมูลส่วนบุคคล:</b> ระบบใช้เลขประจำตัวนักเรียนเพื่อแสดงชื่อนักเรียนและบันทึกคำตอบเท่านั้น คำตอบจะใช้เพื่อการวางแผนการจัดการศึกษาของโรงเรียน เปิดดูได้เฉพาะผู้บริหารและครูที่ได้รับมอบหมาย ไม่เผยแพร่เป็นรายบุคคล หากมีข้อสงสัยติดต่อครูประจำชั้นได้</div>
+  </div>
+ </section>
+
+ <section class="step" data-step="2"><div class="card">
+  <p class="greet" id="greet"></p>
+  <div class="together"><span>👨‍👩‍👦</span><span><b>แบบสอบถามนี้ขอให้นักเรียนและผู้ปกครองตอบร่วมกัน</b> โปรดนั่งคุยและเลือกคำตอบด้วยกัน คำตอบไม่มีถูกหรือผิด ส่วนใหญ่เป็นการแตะเลือกตัวเลือก</span></div>
+  <div class="msg info" id="prevMsg"></div>
+  <div id="p2"></div>
+  <div class="row2"><button class="btn sec" type="button" data-back>ย้อนกลับ</button><button class="btn" type="button" data-next="2">ถัดไป</button></div>
+ </div></section>
+
+ <section class="step" data-step="3"><div class="card">
+  <p class="greet greet2"></p>
+  <div id="p3"></div>
+  <div class="row2"><button class="btn sec" type="button" data-back>ย้อนกลับ</button><button class="btn" type="button" data-next="3">ถัดไป</button></div>
+ </div></section>
+
+ <section class="step" data-step="4"><div class="card">
+  <p class="greet greet2"></p>
+  <div id="p4"></div>
+  <div class="msg" id="submitMsg"></div>
+  <div class="row2"><button class="btn sec" type="button" data-back>ย้อนกลับ</button><button class="btn" type="button" id="submitBtn">ส่งแบบสอบถาม</button></div>
+ </div></section>
+
+ <section class="step" data-step="5"><div class="card done">
+  <div class="ic">✔</div>
+  <h2 style="color:var(--pri);margin:6px 0">ขอบพระคุณเป็นอย่างสูง</h2>
+  <p>โรงเรียนได้รับคำตอบของท่านเรียบร้อยแล้ว ขอขอบพระคุณผู้ปกครองและนักเรียนที่สละเวลาตอบแบบสอบถาม ข้อมูลนี้จะช่วยให้โรงเรียนวางแผนการเรียนชั้น ม.4 ได้ตรงกับความต้องการของครอบครัวมากขึ้น</p>
+  <p class="small">หากต้องการแก้ไขคำตอบ สามารถเข้าสู่ระบบด้วยเลขประจำตัวเดิมและส่งใหม่ได้ ระบบจะใช้คำตอบล่าสุด</p>
+  <button class="btn sec" type="button" id="againBtn">กลับหน้าแรก</button>
+ </div></section>
+</main>
+<footer class="notice"><div class="wrap"><span class="n">เอกสารภายใน – ข้อมูลส่วนบุคคล ห้ามเผยแพร่/ห้ามส่งต่อ</span><span class="p" id="pg">หน้า 1/5</span></div></footer>
+<script>
+const API="https://lflcayubrawqmtibaihh.supabase.co/functions/v1/kruom-m4survey";
+const SPEC={"title": "แบบสอบถามความต้องการการศึกษาต่อระดับชั้นมัธยมศึกษาปีที่ 4 ปีการศึกษา 2570", "sections": [{"id": "A", "page": 2, "title": "ตอนที่ 1 ข้อมูลผู้ร่วมตอบ", "questions": [{"id": "A1", "type": "radio", "q": "ผู้ปกครองที่ร่วมตอบแบบสอบถามครั้งนี้", "opts": ["บิดา", "มารดา", "บิดาและมารดา", "ปู่ ย่า ตา หรือยาย", "ญาติหรือผู้ปกครองท่านอื่น"]}, {"id": "A2", "type": "radio", "q": "ลักษณะการตอบแบบสอบถาม", "opts": ["นักเรียนและผู้ปกครองตอบด้วยกัน", "ผู้ปกครองตอบเป็นหลัก นักเรียนรับทราบคำตอบ", "นักเรียนตอบเป็นหลัก ผู้ปกครองรับทราบคำตอบ"]}]}, {"id": "B", "page": 2, "title": "ตอนที่ 2 แผนการเรียนต่อหลังจบชั้น ม.3", "questions": [{"id": "B1", "type": "radio", "q": "หลังจบชั้น ม.3 ครอบครัวตั้งใจให้นักเรียนเรียนต่อในรูปแบบใด", "opts": ["มัธยมศึกษาตอนปลาย (ม.4) สายสามัญ", "อาชีวศึกษา ระดับ ปวช.", "ทวิศึกษา (เรียน ม.ปลายควบคู่ ปวช. ได้ 2 วุฒิ)", "การศึกษานอกระบบ / กศน. / บ้านเรียน (Home School) / เรียนออนไลน์", "ยังไม่ได้ตัดสินใจ", "อื่น ๆ เช่น โรงเรียนเตรียมทหาร หรือทำงานช่วยครอบครัว"]}, {"id": "B2", "type": "radio", "q": "สถานศึกษาที่ครอบครัวต้องการให้นักเรียนเรียนต่อเป็นอันดับแรก", "opts": ["โรงเรียนปิยมิตรวิทยา (เรียนต่อที่เดิม)", "โรงเรียนเชียงคำวิทยาคม", "โรงเรียนภูซางวิทยาคม", "โรงเรียนฝายกวางวิทยาคม", "โรงเรียนอื่นในอำเภอเชียงคำหรืออำเภอใกล้เคียง", "โรงเรียนในอำเภอเมืองพะเยา", "สถานศึกษาในจังหวัดอื่น (เช่น เชียงราย เชียงใหม่)", "วิทยาลัยเทคนิค / วิทยาลัยอาชีวศึกษา / วิทยาลัยการอาชีพ (ปวช.)", "ยังไม่ได้ตัดสินใจ", "อื่น ๆ"]}, {"id": "B3", "type": "checkbox", "q": "สถานศึกษาทั้งหมดที่ครอบครัวกำลังพิจารณา (เลือกได้มากกว่า 1 ข้อ)", "opts": ["โรงเรียนปิยมิตรวิทยา", "โรงเรียนเชียงคำวิทยาคม", "โรงเรียนภูซางวิทยาคม", "โรงเรียนฝายกวางวิทยาคม", "โรงเรียนอื่นในอำเภอเชียงคำหรืออำเภอใกล้เคียง", "โรงเรียนในอำเภอเมืองพะเยา", "สถานศึกษาในจังหวัดอื่น", "วิทยาลัยเทคนิค / อาชีวศึกษา / การอาชีพ", "ยังไม่ได้พิจารณา"]}, {"id": "B4", "type": "radio", "q": "โอกาสที่นักเรียนจะเรียนต่อชั้น ม.4 ที่โรงเรียนปิยมิตรวิทยา", "opts": ["แน่นอน", "ค่อนข้างแน่นอน", "กำลังพิจารณา", "ค่อนข้างน้อย", "ไม่ได้วางแผนไว้"]}, {"id": "B5", "type": "checkbox", "max": 3, "q": "แผนการเรียน / สาขาที่นักเรียนสนใจ (เลือกได้ไม่เกิน 3 ข้อ)", "opts": ["วิทยาศาสตร์–คณิตศาสตร์", "ศิลป์–คำนวณ (คณิตศาสตร์–ภาษาอังกฤษ)", "ศิลป์–ภาษา (อังกฤษ / จีน / ญี่ปุ่น)", "ศิลป์–สังคม / ศิลป์ทั่วไป", "คอมพิวเตอร์ ดิจิทัล และเทคโนโลยี", "กีฬา ดนตรี หรือศิลปะ", "ปวช. ช่างอุตสาหกรรม (ยานยนต์ ไฟฟ้า อิเล็กทรอนิกส์ ฯลฯ)", "ปวช. พาณิชยกรรม บัญชี การตลาด คอมพิวเตอร์ธุรกิจ", "ปวช. เกษตร คหกรรม การโรงแรม หรือการท่องเที่ยว", "ยังไม่แน่ใจ"]}, {"id": "B6", "type": "radio", "q": "รูปแบบการเรียนที่ครอบครัวต้องการมากที่สุด", "opts": ["เรียนเต็มเวลาที่โรงเรียนตามปกติ", "เรียนที่โรงเรียนเป็นหลัก เสริมด้วยบทเรียนออนไลน์", "ทวิศึกษา / เรียนควบคู่กับสถานศึกษาอาชีวะ", "เรียนออนไลน์ หรือบ้านเรียนเป็นหลัก", "ยังไม่แน่ใจ"]}, {"id": "B7", "type": "checkbox", "q": "กิจกรรมหรือโครงการเสริมที่อยากให้มีในระดับ ม.ปลาย (เลือกได้มากกว่า 1 ข้อ)", "opts": ["ติวเตรียมสอบเข้ามหาวิทยาลัย (TGAT / TPAT / A-Level)", "ภาษาอังกฤษหรือภาษาจีนเข้มข้น", "ทักษะดิจิทัล AI และการเขียนโปรแกรม", "ฝึกทักษะอาชีพ / ฝึกงานระหว่างเรียน", "เรียนรายวิชาล่วงหน้ากับมหาวิทยาลัย (Pre-degree)", "กีฬา ดนตรี ศิลปะ", "แนะแนวและวางแผนอนาคตรายบุคคล", "ยังไม่แน่ใจ"]}]}, {"id": "C", "page": 3, "title": "ตอนที่ 3 ปัจจัยที่ใช้ตัดสินใจเลือกสถานศึกษา", "questions": [{"id": "C1", "type": "scale", "q": "ปัจจัยต่อไปนี้มีความสำคัญต่อการตัดสินใจของครอบครัวในระดับใด", "scale": ["มากที่สุด", "มาก", "ปานกลาง", "น้อย", "น้อยที่สุด"], "rows": ["คุณภาพการเรียนการสอนและผลสัมฤทธิ์ทางการเรียน", "ครูดูแลนักเรียนอย่างใกล้ชิด", "ความปลอดภัยและระเบียบวินัย", "มีแผนการเรียนตรงกับความสนใจของนักเรียน", "ค่าใช้จ่ายและทุนการศึกษา", "ระยะทางและความสะดวกในการเดินทาง", "ชื่อเสียงของสถานศึกษา", "อาคารสถานที่ อุปกรณ์ และเทคโนโลยี", "กิจกรรมพัฒนาผู้เรียน (กีฬา ดนตรี คุณธรรม)", "การสื่อสารระหว่างโรงเรียนกับผู้ปกครอง", "ได้เรียนต่อกับเพื่อนและครูที่คุ้นเคย", "ผลการศึกษาต่อของรุ่นพี่"]}, {"id": "C2", "type": "checkbox", "max": 3, "q": "ปัจจัยที่สำคัญที่สุดสำหรับครอบครัว (เลือกได้ไม่เกิน 3 ข้อ)", "opts": ["คุณภาพการเรียนการสอน", "ครูดูแลใกล้ชิด", "ความปลอดภัยและระเบียบวินัย", "แผนการเรียนตรงความสนใจ", "ค่าใช้จ่ายและทุน", "ระยะทางและการเดินทาง", "ชื่อเสียงของสถานศึกษา", "อาคารสถานที่และเทคโนโลยี", "กิจกรรมพัฒนาผู้เรียน", "การสื่อสารกับผู้ปกครอง", "เพื่อนและครูที่คุ้นเคย", "ผลการศึกษาต่อของรุ่นพี่"]}, {"id": "C3", "type": "radio", "q": "ผู้มีส่วนสำคัญที่สุดในการตัดสินใจเรื่องการเรียนต่อ", "opts": ["นักเรียนเป็นผู้ตัดสินใจหลัก", "ผู้ปกครองเป็นผู้ตัดสินใจหลัก", "นักเรียนและผู้ปกครองตัดสินใจร่วมกัน", "ญาติหรือบุคคลอื่นมีส่วนสำคัญ"]}, {"id": "C4", "type": "checkbox", "q": "เรื่องที่ครอบครัวกังวลเกี่ยวกับการเรียน ม.ปลาย (เลือกได้มากกว่า 1 ข้อ)", "opts": ["ค่าใช้จ่าย", "ระยะทางและการเดินทาง", "ความพร้อมด้านการเรียนของนักเรียน", "การปรับตัวกับเพื่อนและสังคมใหม่", "การใช้โทรศัพท์ เกม หรือสื่อออนไลน์", "ความปลอดภัย", "ยังไม่ทราบความถนัดของนักเรียน", "การสอบเข้ามหาวิทยาลัย", "ไม่มีข้อกังวล"]}]}, {"id": "D", "page": 3, "title": "ตอนที่ 4 ค่าใช้จ่ายและการเดินทาง", "questions": [{"id": "D1", "type": "radio", "q": "ค่าใช้จ่ายที่เรียกเก็บโดยสถานศึกษาต่อภาคเรียนที่ครอบครัวเห็นว่าเหมาะสม", "opts": ["ไม่เกิน 3,000 บาท", "3,001–6,000 บาท", "6,001–10,000 บาท", "10,001–15,000 บาท", "มากกว่า 15,000 บาท", "ขึ้นอยู่กับทุนหรือส่วนลดที่ได้รับ"]}, {"id": "D2", "type": "radio", "q": "ความสนใจทุนการศึกษา ส่วนลด หรือการผ่อนชำระค่าเล่าเรียน", "opts": ["สนใจมาก", "สนใจ", "ไม่จำเป็น"]}, {"id": "D3", "type": "radio", "q": "ระยะทางจากบ้านถึงสถานศึกษาที่ครอบครัวยอมรับได้", "opts": ["ไม่เกิน 5 กิโลเมตร", "5–15 กิโลเมตร", "16–30 กิโลเมตร", "มากกว่า 30 กิโลเมตร", "ไม่จำกัด หากมีหอพักที่ปลอดภัย"]}, {"id": "D4", "type": "radio", "q": "วิธีเดินทางไปสถานศึกษาที่คาดว่าจะใช้", "opts": ["ผู้ปกครองรับ–ส่ง", "รถรับ–ส่งนักเรียน / รถรับจ้าง", "นักเรียนเดินทางเองด้วยรถจักรยานยนต์", "รถโดยสารประจำทาง", "จักรยานหรือเดิน", "พักหอพัก"]}, {"id": "D5", "type": "radio", "q": "หากโรงเรียนปิยมิตรวิทยาจัดบริการรถรับ–ส่ง ครอบครัวสนใจหรือไม่", "opts": ["สนใจ", "อาจสนใจ ขึ้นอยู่กับเส้นทางและค่าบริการ", "ไม่สนใจ"]}]}, {"id": "E", "page": 4, "title": "ตอนที่ 5 เป้าหมายการศึกษาและอาชีพ", "questions": [{"id": "E1", "type": "radio", "q": "ระดับการศึกษาสูงสุดที่ครอบครัวคาดหวังให้นักเรียนศึกษา", "opts": ["จบ ม.6 หรือ ปวช. แล้วทำงาน", "ปวส. / อนุปริญญา", "ปริญญาตรี", "สูงกว่าปริญญาตรี", "ให้นักเรียนเลือกเอง", "ยังไม่แน่ใจ"]}, {"id": "E2", "type": "checkbox", "max": 3, "q": "กลุ่มสาขาหรืออาชีพที่นักเรียนสนใจ (เลือกได้ไม่เกิน 3 ข้อ)", "opts": ["แพทย์ พยาบาล สาธารณสุข", "วิศวกรรม และเทคโนโลยี", "คอมพิวเตอร์ ดิจิทัล และ AI", "ครูและการศึกษา", "บัญชี บริหารธุรกิจ", "รับราชการ ทหาร ตำรวจ", "เกษตร และอาหาร", "ภาษา การท่องเที่ยว การโรงแรม", "ศิลปะ การออกแบบ สื่อ", "กฎหมาย และสังคมศาสตร์", "ธุรกิจครอบครัว / ค้าขาย", "ช่างเทคนิค", "ยังไม่แน่ใจ"]}, {"id": "E3", "type": "radio", "q": "ครอบครัวทราบความถนัดและความสนใจของนักเรียนมากน้อยเพียงใด", "opts": ["ทราบชัดเจน", "พอทราบบ้าง", "ยังไม่ทราบ อยากให้โรงเรียนช่วยแนะแนว"]}]}, {"id": "F", "page": 4, "title": "ตอนที่ 6 ข้อมูลข่าวสารและการแนะแนว", "questions": [{"id": "F1", "type": "checkbox", "q": "ช่องทางรับข่าวสารจากโรงเรียนที่สะดวกและเชื่อถือ (เลือกได้มากกว่า 1 ข้อ)", "opts": ["LINE Official ของโรงเรียน", "กลุ่ม LINE ผู้ปกครองประจำห้อง", "เพจ Facebook ของโรงเรียน", "ครูประจำชั้นโทรแจ้ง", "หนังสือแจ้งผ่านนักเรียน", "ประชุมผู้ปกครองที่โรงเรียน", "ครูเยี่ยมบ้าน", "เว็บไซต์โรงเรียน", "TikTok / YouTube ของโรงเรียน"]}, {"id": "F2", "type": "checkbox", "q": "ข้อมูลที่ครอบครัวต้องการทราบเพิ่มเติม (เลือกได้มากกว่า 1 ข้อ)", "opts": ["แผนการเรียนและรายวิชา ม.4", "ค่าใช้จ่าย ทุนการศึกษา และส่วนลด", "ผลการเรียนและการศึกษาต่อของรุ่นพี่", "ครูผู้สอนและการดูแลนักเรียน", "กิจกรรมและโครงการพิเศษ", "รถรับ–ส่งนักเรียน", "กำหนดการรับสมัครและมอบตัว"]}, {"id": "F3", "type": "radio", "q": "ครอบครัวสนใจเข้าร่วมกิจกรรมแนะแนว / ประชุมชี้แจงการเรียนต่อ ม.4 หรือไม่", "opts": ["สนใจ เข้าร่วมที่โรงเรียน", "สนใจ เข้าร่วมแบบออนไลน์", "สนใจ ได้ทั้งสองแบบ", "ไม่สะดวกเข้าร่วม"]}, {"id": "F4", "type": "checkbox", "q": "ช่วงเวลาที่สะดวกเข้าร่วม (เลือกได้มากกว่า 1 ข้อ)", "opts": ["วันธรรมดา ช่วงเย็น", "วันเสาร์ ช่วงเช้า", "วันเสาร์ ช่วงบ่าย", "วันอาทิตย์", "วันเดียวกับการประชุมผู้ปกครอง", "ไม่สะดวก"]}, {"id": "F5", "type": "radio", "q": "ต้องการให้ครูติดต่อกลับเพื่อให้คำปรึกษาเรื่องการเรียนต่อเป็นรายบุคคลหรือไม่ (ติดต่อตามช่องทางที่ให้ไว้กับโรงเรียนแล้ว)", "opts": ["ต้องการ", "ไม่ต้องการ"]}, {"id": "G1", "type": "text", "optional": true, "max": 500, "q": "ข้อเสนอแนะเพิ่มเติมถึงโรงเรียน (ไม่บังคับ)"}]}]};
+const EXCL=["ยังไม่แน่ใจ","ยังไม่ได้พิจารณา","ไม่มีข้อกังวล","ไม่สะดวก"];
+const TOTAL=5;let step=1,token=null,ans={};
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+function esc(s){return String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]))}
+function go(n){step=n;$$(".step").forEach(e=>e.classList.toggle("on",+e.dataset.step===n));$$("#prog i").forEach((e,i)=>e.classList.toggle("on",i<n));$("#pg").textContent="หน้า "+n+"/"+TOTAL;window.scrollTo({top:0,behavior:"smooth"});}
+function save(){try{sessionStorage.setItem("m4s_draft",JSON.stringify(ans))}catch(e){}}
+let qno=0;
+function render(){
+ for(const sec of SPEC.sections){
+  const host=$("#p"+sec.page);const box=document.createElement("div");
+  box.innerHTML='<div class="sec-title">'+esc(sec.title)+'</div>';
+  for(const q of sec.questions){qno++;const d=document.createElement("div");d.className="q";d.id="q_"+q.id;
+   let h='<div class="qt"><span class="no">'+qno+'.</span>'+esc(q.q)+'</div>';
+   if(q.type==="radio"||q.type==="checkbox"){
+    if(q.type==="checkbox")h+='<div class="hint">'+(q.max?'เลือกได้ไม่เกิน '+q.max+' ข้อ':'เลือกได้มากกว่า 1 ข้อ')+'</div>';
+    q.opts.forEach((o,i)=>{h+='<label class="opt"><input type="'+q.type+'" name="'+q.id+'" value="'+esc(o)+'"><span>'+esc(o)+'</span></label>'});
+   }else if(q.type==="scale"){
+    h+='<div class="hint">แตะเลือก 1 ระดับในแต่ละข้อ</div>';
+    q.rows.forEach((r,ri)=>{h+='<div class="scale-row" data-row="'+ri+'"><div class="lbl">'+esc(r)+'</div><div class="pills">'+q.scale.map(s=>'<label><input type="radio" name="'+q.id+'_'+ri+'" value="'+esc(s)+'">'+esc(s)+'</label>').join("")+'</div></div>'});
+   }else if(q.type==="text"){
+    h+='<textarea name="'+q.id+'" maxlength="'+(q.max||500)+'" placeholder="พิมพ์ข้อเสนอแนะ (ถ้ามี)"></textarea>';
+   }
+   d.innerHTML=h;box.appendChild(d);
+  }
+  host.appendChild(box);
+ }
+ document.addEventListener("change",onChange);document.addEventListener("input",e=>{if(e.target.tagName==="TEXTAREA"){ans[e.target.name]=e.target.value;save()}});
+}
+function qById(id){for(const s of SPEC.sections)for(const q of s.questions)if(q.id===id)return q}
+function onChange(e){const t=e.target;if(!t.name||t.id==="sid")return;
+ const m=t.name.match(/^([A-Z]\d)(?:_(\d+))?$/);if(!m)return;const q=qById(m[1]);if(!q)return;
+ if(q.type==="radio"){ans[q.id]=t.value}
+ else if(q.type==="checkbox"){
+  let boxes=$$('input[name="'+q.id+'"]');
+  if(t.checked&&EXCL.includes(t.value))boxes.forEach(b=>{if(b!==t)b.checked=false});
+  else if(t.checked)boxes.forEach(b=>{if(EXCL.includes(b.value))b.checked=false});
+  let v=boxes.filter(b=>b.checked).map(b=>b.value);
+  if(q.max&&v.length>q.max){t.checked=false;v=v.filter(x=>x!==t.value)}
+  ans[q.id]=v;
+  if(q.max)boxes.forEach(b=>{const dis=!b.checked&&v.length>=q.max;b.disabled=dis;b.parentElement.classList.toggle("dis",dis)});
+ }else if(q.type==="scale"){ans[q.id]=ans[q.id]||{};ans[q.id][q.rows[+m[2]]]=t.value;t.closest(".scale-row").classList.remove("bad")}
+ paint(q);const el=$("#q_"+q.id);if(el&&valid(q))el.classList.remove("bad");save();
+}
+function paint(q){$$('#q_'+q.id+' input').forEach(i=>{const l=i.closest("label");if(l)l.classList.toggle("sel",i.checked)})}
+function valid(q){const v=ans[q.id];
+ if(q.type==="radio")return !!v;if(q.type==="checkbox")return Array.isArray(v)&&v.length>0;
+ if(q.type==="scale")return v&&q.rows.every(r=>v[r]);return true}
+function check(page){let first=null;
+ for(const s of SPEC.sections)if(s.page===page)for(const q of s.questions){const el=$("#q_"+q.id);const ok=valid(q);el.classList.toggle("bad",!ok);
+  if(q.type==="scale")q.rows.forEach((r,ri)=>el.querySelector('[data-row="'+ri+'"]').classList.toggle("bad",!(ans[q.id]&&ans[q.id][r])));
+  if(!ok&&!first)first=el}
+ if(first){first.scrollIntoView({behavior:"smooth",block:"center"});return false}return true}
+function restore(){try{const d=JSON.parse(sessionStorage.getItem("m4s_draft")||"{}");ans=d||{}}catch(e){ans={}}
+ for(const s of SPEC.sections)for(const q of s.questions){const v=ans[q.id];if(v==null)continue;
+  if(q.type==="radio")$$('input[name="'+q.id+'"]').forEach(i=>i.checked=i.value===v);
+  else if(q.type==="checkbox"){$$('input[name="'+q.id+'"]').forEach(i=>i.checked=v.includes(i.value));if(q.max)$$('input[name="'+q.id+'"]').forEach(b=>{const dis=!b.checked&&v.length>=q.max;b.disabled=dis;b.parentElement.classList.toggle("dis",dis)})}
+  else if(q.type==="scale")q.rows.forEach((r,ri)=>$$('input[name="'+q.id+'_'+ri+'"]').forEach(i=>i.checked=i.value===v[r]));
+  else if(q.type==="text")$('textarea[name="'+q.id+'"]').value=v;
+  paint(q)}}
+async function call(body){const r=await fetch(API,{method:"POST",headers:{"content-type":"application/json"},body:JSON.stringify(body)});let j={};try{j=await r.json()}catch(e){}return{status:r.status,...j}}
+$("#loginForm").addEventListener("submit",async e=>{e.preventDefault();const id=$("#sid").value.replace(/\D/g,"");const m=$("#loginMsg");m.className="msg";
+ if(id.length<4){m.className="msg err";m.textContent="กรุณากรอกเลขประจำตัวนักเรียนให้ถูกต้อง";return}
+ const b=$("#loginBtn");b.disabled=true;b.textContent="กำลังตรวจสอบ...";
+ try{const r=await call({action:"login",id});
+  if(r.ok){token=r.token;const g="สวัสดีผู้ปกครองของ"+r.prefix+r.first+" "+r.last;$("#greet").textContent=g;$$(".greet2").forEach(x=>x.textContent=g);
+   const last=sessionStorage.getItem("m4s_id");if(last!==id){sessionStorage.removeItem("m4s_draft")}sessionStorage.setItem("m4s_id",id);restore();
+   const pm=$("#prevMsg");if(r.submitted_before){pm.className="msg info";pm.textContent="ครอบครัวของท่านเคยส่งแบบสอบถามแล้ว หากส่งอีกครั้ง ระบบจะใช้คำตอบล่าสุดแทนคำตอบเดิม"}else{pm.className="msg"}
+   $("#sid").value="";go(2)}
+  else{m.className="msg err";m.textContent=r.error||"ไม่พบข้อมูลที่ตรงกัน กรุณาตรวจสอบอีกครั้ง"}
+ }catch(err){m.className="msg err";m.textContent="ไม่สามารถเชื่อมต่อระบบได้ กรุณาตรวจสอบอินเทอร์เน็ตแล้วลองใหม่"}
+ b.disabled=false;b.textContent="เข้าสู่แบบสอบถาม"});
+$$("[data-next]").forEach(b=>b.addEventListener("click",()=>{const p=+b.dataset.next;if(check(p))go(p+1)}));
+$$("[data-back]").forEach(b=>b.addEventListener("click",()=>{if(step===2){if(confirm("ต้องการออกจากแบบสอบถามและกลับหน้าแรกหรือไม่")){token=null;go(1)}}else go(step-1)}));
+$("#submitBtn").addEventListener("click",async()=>{if(!check(4))return;const m=$("#submitMsg"),b=$("#submitBtn");m.className="msg";b.disabled=true;b.textContent="กำลังส่ง...";
+ const payload={};for(const s of SPEC.sections)for(const q of s.questions){if(q.type==="text"){const t=(ans[q.id]||"").trim();if(t)payload[q.id]=t}else payload[q.id]=ans[q.id]}
+ try{const r=await call({action:"submit",token,answers:payload});
+  if(r.ok){sessionStorage.removeItem("m4s_draft");sessionStorage.removeItem("m4s_id");token=null;ans={};$$("main input,main textarea").forEach(i=>{if(i.type==="radio"||i.type==="checkbox"){i.checked=false;i.disabled=false;i.closest("label")&&i.closest("label").classList.remove("sel","dis")}else i.value=""});go(5)}
+  else if(r.status===401){m.className="msg err";m.textContent=r.error;setTimeout(()=>go(1),2500)}
+  else{m.className="msg err";m.textContent=r.error||"บันทึกไม่สำเร็จ กรุณาลองใหม่";if(r.field){const el=$("#q_"+r.field);if(el){el.classList.add("bad");el.scrollIntoView({block:"center"})}}}
+ }catch(err){m.className="msg err";m.textContent="ไม่สามารถเชื่อมต่อระบบได้ คำตอบยังอยู่ในเครื่อง กรุณาลองกดส่งอีกครั้ง"}
+ b.disabled=false;b.textContent="ส่งแบบสอบถาม"});
+$("#againBtn").addEventListener("click",()=>go(1));
+render();
+</script>
+</body>
+</html>
